@@ -1,1 +1,28 @@
--- uhhhhh create:Script(Named) = skibidi toilet hub features: Silent aim()turn on hit part: Torso
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "Crim Hub",
+   LoadingTitle = "Crim Hub Loading...",
+   LoadingSubtitle = "By Geek & ZZVVII",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = ZuiMomento2, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "EPfpgkg6", -- The Discord invite code, do not include discordgg
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Crim Hub",
+      Subtitle = "Crim Hub Key System",
+      Note = "on the works",
+      FileName = "Key123", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key ="nigger" -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+local Tab = Window:CreateTab("Main", nil) -- Title, Image
+local Section = Tab:CreateSection("Silent Aim")
